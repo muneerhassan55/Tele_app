@@ -39,8 +39,11 @@ lib/
 
 1. Install Flutter (3.x) and run `flutter pub get`.
 2. Create a Firebase project and run `flutterfire configure` to generate your own `lib/firebase_options.dart`. Enable Email/Password and Google sign-in.
-3. Create a ZEGOCLOUD project and put your own App ID and App Sign in `lib/utils/app-constant.dart`.
-4. Run `flutter run`.
+3. Create a ZEGOCLOUD project and run with its App ID and App Sign (read at build time, nothing is stored in the repo):
+
+```bash
+flutter run --dart-define=ZEGO_APP_ID=123456789 --dart-define=ZEGO_APP_SIGN=your_app_sign
+```
 
 ## License
 
