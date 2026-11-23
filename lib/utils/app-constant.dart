@@ -3,9 +3,8 @@
 import 'package:flutter/material.dart';
 
 class AppConstant {
-  static int appId = 1307707892;
-  static String appSignIn =
-      '367755ee63d71b6a46edc7e2da44171f00ba0d11b31561dd9adc32f260825594';
+  static const int appId = int.fromEnvironment('ZEGO_APP_ID');
+  static const String appSignIn = String.fromEnvironment('ZEGO_APP_SIGN');
   static String appMainName = 'Ecomm';
   static String appPoweredBy = 'Powered By Techi4u';
   static const appMainColor = Color(0xFFbf1b08);
